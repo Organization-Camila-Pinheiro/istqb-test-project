@@ -36,18 +36,19 @@
         <div id="welcome">
             <h2>Welcome</h2>
             <p>Welcome to ISTQB Online Test</p>
-        </div>
-        <div id="Formulario1" class="was-validated">
-            <div class="mb-3">
-                <input type="text" id="nombre1" placeholder="Introduce tu nombre" required minlength="1" maxlength="10"
-                    class="form-control">
-                <p class="valid-feedback">Correcto</p>
-                <p class="invalid-feedback">El nombre es obligatorio y debe tener hasta 10 caracteres</p>
 
+            <div id="Formulario1" class="was-validated">
+                <div class="mb-3">
+                    <input type="text" id="nombre1" placeholder="Introduce tu nombre" required minlength="1"
+                        maxlength="10" class="form-control">
+                    <p class="valid-feedback">Correcto</p>
+                    <p class="invalid-feedback">El nombre es obligatorio y debe tener hasta 10 caracteres</p>
+
+                </div>
+                <button type="button" class="btn btn-success" onclick="bienvenida()">Enter</button>
             </div>
-            <button type="button" class="btn btn-success" onclick="bienvenida()">Enter</button>
+            <p id="welcome1"></p>
         </div>
-        <p id="welcome1"></p>
 
 
         <div id="test">

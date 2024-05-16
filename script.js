@@ -11,6 +11,7 @@ function bienvenida(){
 }
 
 function showAnswer(){
-    let mensaje = "La respuesta correcta es la C " 
+    let answer = "C"
+    let mensaje = "La respuesta correcta es la " + answer
     imprimir(mensaje, "respuesta1")
 }

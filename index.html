@@ -67,10 +67,11 @@
                     <option value="C">Respuesta C: Reducir el nivel de riego del objeto de prueba y generar confianza en
                         el nivel de calidad.</option>
                 </select>
-                <button type="button" class="btn btn-success" onclick="showAnswer()">Answer</button>
-                <button type="button" class="btn btn-success" onclick="correctAnswer()">Correct</button>
+                <button type="button" class="btn btn-success" onclick="showAnswer(1)">Answer</button>
+                <button type="button" class="btn btn-success" onclick="correctAnswer(1)">Correct</button>
             </div>
             <p id="respuesta1"></p>
+            <p id="corrigir1"></p>
 
             <div id="Formulario3" class="was-validated">
                 <h3>Pregunta 2</h3>
@@ -81,10 +82,11 @@
                     <option value="B">Respuesta B: Análisis y diseno de la prueba.</option>
                     <option value="C">Respuesta C: Implementación y ejecución de la prueba.</option>
                 </select>
-                <button type="button" class="btn btn-success" onclick="showAnswer()">Answer</button>
-                <button type="button" class="btn btn-success" onclick="correctAnswer()">Correct</button>
+                <button type="button" class="btn btn-success" onclick="showAnswer(2)">Answer</button>
+                <button type="button" class="btn btn-success" onclick="correctAnswer(2)">Correct</button>
             </div>
             <p id="respuesta2"></p>
+            <p id="corrigir2"></p>
         </div>
 
         <div id="Formulario4" class="was-validated">
@@ -100,10 +102,11 @@
                 <option value="C">Respuesta C: Los probadores intentan no molestar a los desarrolladores mientras
                     codifican, para que éstos escriban un código de mejor calidad.</option>
             </select>
-            <button type="button" class="btn btn-success" onclick="showAnswer()">Answer</button>
-            <button type="button" class="btn btn-success" onclick="correctAnswer()">Correct</button>
+            <button type="button" class="btn btn-success" onclick="showAnswer(3)">Answer</button>
+            <button type="button" class="btn btn-success" onclick="correctAnswer(3)">Correct</button>
         </div>
         <p id="respuesta3"></p>
+        <p id="corrigir3"></p>
 
         <div id="Formulario5" class="was-validated">
             <h3>Pregunta 4</h3>
@@ -120,10 +123,11 @@
                     tras ejecutar un caso de prueba que comprueba el proceso de pago con tarjeta de crédito e informar
                     de un defecto.</option>
             </select>
-            <button type="button" class="btn btn-success" onclick="showAnswer()">Answer</button>
-            <button type="button" class="btn btn-success" onclick="correctAnswer()">Correct</button>
+            <button type="button" class="btn btn-success" onclick="showAnswer(4)">Answer</button>
+            <button type="button" class="btn btn-success" onclick="correctAnswer(4)">Correct</button>
         </div>
         <p id="respuesta4"></p>
+        <p id="corrigir4"></p>
 
         <div id="Formulario6" class="was-validated">
             <h3>Pregunta 5</h3>
@@ -138,10 +142,11 @@
                 <option value="C">Respuesta C: Los probadores ayudan a los representantes de negocio a crear pruebas de
                     aceptacion adecuadas.</option>
             </select>
-            <button type="button" class="btn btn-success" onclick="showAnswer()">Answer</button>
-            <button type="button" class="btn btn-success" onclick="correctAnswer()">Correct</button>
+            <button type="button" class="btn btn-success" onclick="showAnswer(5)">Answer</button>
+            <button type="button" class="btn btn-success" onclick="correctAnswer(5)">Correct</button>
         </div>
         <p id="respuesta5"></p>
+        <p id="corrigir5"></p>
 
         <div id="Formulario7" class="was-validated">
             <h3>Pregunta 6</h3>
@@ -154,10 +159,11 @@
                 <option value="B">Respuesta B: Sólo en modelos CVDS iterativos.</option>
                 <option value="C">Respuesta C: Sólo en modelos secuenciales.</option>
             </select>
-            <button type="button" class="btn btn-success" onclick="showAnswer()">Answer</button>
-            <button type="button" class="btn btn-success" onclick="correctAnswer()">Correct</button>
+            <button type="button" class="btn btn-success" onclick="showAnswer(6)">Answer</button>
+            <button type="button" class="btn btn-success" onclick="correctAnswer(6)">Correct</button>
         </div>
         <p id="respuesta6"></p>
+        <p id="corrigir6"></p>
 
         <div id="Formulario8" class="was-validated">
             <h3>Pregunta 7</h3>
@@ -172,10 +178,11 @@
                 <option value="C">Respuesta C: Redacta un guión de prueba antes de establecer el processo de gestión de
                     la configuración.</option>
             </select>
-            <button type="button" class="btn btn-success" onclick="showAnswer()">Answer</button>
-            <button type="button" class="btn btn-success" onclick="correctAnswer()">Correct</button>
+            <button type="button" class="btn btn-success" onclick="showAnswer(7)">Answer</button>
+            <button type="button" class="btn btn-success" onclick="correctAnswer(7)">Correct</button>
         </div>
         <p id="respuesta7"></p>
+        <p id="corrigir7"></p>
 
         <div id="Formulario9" class="was-validated">
             <h3>Pregunta 8</h3>
@@ -190,10 +197,11 @@
                 </option>
                 <option value="C">Respuesta C: Detectar carencias e incoherencias en los requisitos.</option>
             </select>
-            <button type="button" class="btn btn-success" onclick="showAnswer()">Answer</button>
-            <button type="button" class="btn btn-success" onclick="correctAnswer()">Correct</button>
+            <button type="button" class="btn btn-success" onclick="showAnswer(8)">Answer</button>
+            <button type="button" class="btn btn-success" onclick="correctAnswer(8)">Correct</button>
         </div>
         <p id="respuesta8"></p>
+        <p id="corrigir8"></p>
         
         <div id="Formulario10" class="was-validated">
             <h3>Pregunta 9</h3>
@@ -206,10 +214,11 @@
                 </option>
                 <option value="C">Respuesta C: Es la única forma de medir la calidad de los cambios.</option>
             </select>
-            <button type="button" class="btn btn-success" onclick="showAnswer()">Answer</button>
-            <button type="button" class="btn btn-success" onclick="correctAnswer()">Correct</button>
+            <button type="button" class="btn btn-success" onclick="showAnswer(9)">Answer</button>
+            <button type="button" class="btn btn-success" onclick="correctAnswer(9)">Correct</button>
         </div>
         <p id="respuesta9"></p>
+        <p id="corrigir9"></p>
 
         <div id="Formulario11" class="was-validated">
             <h3>Pregunta 10</h3>
@@ -222,10 +231,11 @@
                 </option>
                 <option value="C">Respuesta C: Las técnicas se basan en gran medida en los conocimientos del probador sobre el software y el dominio del negocio.</option>
             </select>
-            <button type="button" class="btn btn-success" onclick="showAnswer()">Answer</button>
-            <button type="button" class="btn btn-success" onclick="correctAnswer()">Correct</button>
+            <button type="button" class="btn btn-success" onclick="showAnswer(10)">Answer</button>
+            <button type="button" class="btn btn-success" onclick="correctAnswer(10)">Correct</button>
         </div>
         <p id="respuesta10"></p>
+        <p id="corrigir10"></p>
 
 
 

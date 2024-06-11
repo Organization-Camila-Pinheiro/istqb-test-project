@@ -44,4 +44,17 @@ function correctAnswer(numeroPregunta){
     imprimir(mensaje, "corrigir"+numeroPregunta);
 
     }
+
+    function sumaPuntos(){
+        let totalScore = 0;
+
+        for(let i = 1; i < 10; i++){
+            let resultado = i
+            console.log(i)
+            correctAnswer(i)
+            totalScore += score
+            
+        }
+
+    }
     

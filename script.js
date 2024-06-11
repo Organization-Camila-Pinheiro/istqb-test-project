@@ -40,21 +40,21 @@ function correctAnswer(numeroPregunta){
         score = -1
         mensaje = "Respuesta equivodada! Puntuación: " + score;
     }
-    
+
     imprimir(mensaje, "corrigir"+numeroPregunta);
-
+    return score
     }
 
-    function sumaPuntos(){
-        let totalScore = 0;
-
-        for(let i = 1; i < 10; i++){
-            let resultado = i
-            console.log(i)
-            correctAnswer(i)
-            totalScore += score
-            
-        }
-
-    }
     
+    function sumaPuntos(){
+    let sumaTotal = 0
+    let mensaje = ""
+    
+    for(let i=1; i<=10; i++){
+        let score = correctAnswer(i)
+        sumaTotal += score 
+        mensaje = "Su pontuación final es " + sumaTotal
+
+    }
+    imprimir(mensaje, "pontuacionFinal")
+    }

@@ -1,5 +1,5 @@
 listaRespuesta = ["C", "C", "A", "B", "C", "A", "C", "A", "B", "C"]
-
+listaRanking = []
 
 function imprimir(mensaje, id) {
     let parrafo = document.getElementById(id)
@@ -58,39 +58,28 @@ function sumaPuntos() {
     }
 
     imprimir(mensaje, "pontuacionFinal")
-    ranking()
     
 }
 
 
 function ranking() {
-    listaRanking = []
-    let students = {}
-    students.nombre = document.getElementById("nombre1").value;
-    students.notaFinal = sumaTotal;
-    listaRanking.push(students);
-    //let mensaje1 = " lista " + listaRanking
+    let student = {}
+    student.nombre = document.getElementById("nombre1").value;
+    student.notaFinal = sumaTotal;
+    listaRanking.push(student);
+    listaRanking.sort((a,b) => b.notaFinal - a.notaFinal )
 
     let mensaje = "";
-    for (i = 0; i<listaRanking.lenght; i++) {
-        mensaje += "Estudiente número: " [i];
-        mensaje += "Nombre " + students[i].nombre;
-        mensaje += "Pontuación final " + students[i].notaFinal;
+    for (i = 0; i<listaRanking.length; i++) {
+        let studentRanking = listaRanking[i]
+        mensaje += " Nombre: " + listaRanking[i].nombre;
+        mensaje += " Pontuación final: " + listaRanking[i].notaFinal;
     }
-    imprimir(mensaje, "ranking1")
 
+    imprimir(mensaje, "ranking1")
+    
 }
 
 
-/** function mostrarArray() {
-    let mensaje = "";
-    for (i = 0; i < listaRanking.lenght; i++) {
-        mensaje += "Nombre " + students[i].nombre;
-        mensaje += "Pontuación final " + students[i].notaFinal;
-        console.log(mensaje)
-    }
-    imprimir(mensaje, "ranking1")
-
-} */
 
 

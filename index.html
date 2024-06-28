@@ -37,7 +37,7 @@
             <h2>Welcome</h2>
             <p>Welcome to ISTQB Online Test</p>
 
-            <div id="Formulario1" class="was-validated">
+            <form id="Formulario1" class="was-validated">
                 <div class="mb-3">
                     <input type="text" id="nombre1" placeholder="Introduce tu nombre" required minlength="1"
                         maxlength="10" class="form-control">
@@ -46,7 +46,7 @@
 
                 </div>
                 <button type="button" class="btn btn-success" onclick="bienvenida()">Enter</button>
-            </div>
+            </form>
             <p id="welcome1"></p>
         </div>
 
@@ -275,7 +275,7 @@
                     <button type="button" class="btn btn-success" onclick="verPontuacion()">Finish the exam</button>
                     <p id="pontuacionFinal"></p>
                     <p>Student Ranking</p>
-                    <button type="button" class="btn btn-success" onclick="agregarEstudiante()">Ranking</button>
+                    <button type="button" class="btn btn-success" onclick="imprimirAlumno()">Ranking</button>
                     <p id="ranking1"></p>
 
                 </div>

@@ -1,7 +1,7 @@
 listaRespuesta = ["C", "C", "A", "B", "C", "A", "C", "A", "B", "C"]
 listaRanking = []
 let sumaTotal = 0
-let nombreEstudiante = ""
+
 
 function imprimir(mensaje, id) {
     let parrafo = document.getElementById(id)
@@ -9,9 +9,9 @@ function imprimir(mensaje, id) {
 }
 
 function bienvenida() {
-    nombreEstudiante = document.getElementById("nombre1").value;
+    let nombreEstudiante = document.getElementById("nombre1").value;
 
-    let mensaje = "Hola " + nombre + ", sea bienvenida al examen de ISTQB! Que hagas un buen examen!";
+    let mensaje = "Hola " + nombreEstudiante + ", sea bienvenida al examen de ISTQB! Que hagas un buen examen!";
     imprimir(mensaje, "welcome1");
 }
 
@@ -48,57 +48,46 @@ function correctAnswer(numeroPregunta) {
     return score
 }
 
-
-
-function verPontuacion() {
-    let sumaTotal = 0
-    let mensaje = ""
-    for (let i = 1; i <= 10; i++) {
-        let score = correctAnswer(i)
-        sumaTotal += score
-        mensaje = "Su pontuación final es " + sumaTotal
-    }
-    imprimir(mensaje, "pontuacionFinal");
-    agregarEstudiante();
-    borrarRespuesta();
-    
-
-}
-
 function borrarRespuesta() {
     document.getElementById("Formulario1").reset();
     document.getElementById("formulariotest").reset();
     document.getElementById("welcome1").innerText = "";
 
-    for (let i = 0; i > listaRespuesta.length; i++) {
+    for (let i = 0; i < listaRespuesta.length; i++) {
         document.getElementById("respuesta" + (i + 1)).innerText = "";
         document.getElementById("corrigir" + (i + 1)).innerText = "";
     }
 
 }
 
-function agregarEstudiante() {
-
-    if (nombreEstudiante != "") {
-        let student = {
-            nombre: nombreEstudiante,
-            notaFinal: sumaTotal
-        }
-
-        listaRanking.push(student);
+function verPontuacion() {
+    sumaTotal = 0
+    let mensaje = ""
+    for (let i = 1; i <= 10; i++) {
+        let score = correctAnswer(i)
+        sumaTotal += score
+        mensaje = "Su pontuación final es " + sumaTotal
     }
 
-    imprimirAlumno();
+    imprimir(mensaje, "pontuacionFinal");
+    agregarEstudiante();
+    borrarRespuesta();
 }
 
+function agregarEstudiante() {
+    let student = {} 
+    let nombreEstudiante = document.getElementById("nombre1").value;
 
-function ordenarRanking() {
+    if (nombreEstudiante !== "") {
+        student.nombre = document.getElementById("nombre1").value;
+        student.notaFinal = sumaTotal;
+        listaRanking.push(student);
+        }
+        
     listaRanking.sort((a, b) => b.notaFinal - a.notaFinal)
 }
 
-
 function imprimirAlumno() {
-    ordenarRanking();
     let mensaje = "";
 
     for (i = 0; i < listaRanking.length; i++) {

@@ -49,6 +49,7 @@ function correctAnswer(numeroPregunta) {
 let sumaTotal = 0
 
 function sumaPuntos() {
+    let sumaTotal = 0
     let mensaje = ""
 
     for (let i = 1; i <= 10; i++) {

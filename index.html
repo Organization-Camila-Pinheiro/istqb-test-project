@@ -39,15 +39,15 @@
 
             <form id="Formulario1" class="was-validated">
                 <div class="mb-3">
-                    <input type="text" id="nombre1" placeholder="Introduce tu nombre" required minlength="1"
+                    <input type="text" id="nombre1" data-cy="input-nombre-welcome" placeholder="Introduce tu nombre" required minlength="1"
                         maxlength="10" class="form-control">
-                    <p class="valid-feedback">Correcto</p>
-                    <p class="invalid-feedback">El nombre es obligatorio y debe tener hasta 10 caracteres</p>
+                    <p class="valid-feedback" data-cy="success-welcome-message">Correcto</p>
+                    <p class="invalid-feedback" data-cy="eror-welcome-message">El nombre es obligatorio y debe tener hasta 10 caracteres</p>
 
                 </div>
-                <button type="button" class="btn btn-success" onclick="bienvenida()">Enter</button>
+                <button type="button" class="btn btn-success" data-cy="button-welcome" onclick="bienvenida()">Enter</button>
             </form>
-            <p id="welcome1"></p>
+            <p id="welcome1" data-cy="welcome-message"></p>
         </div>
 
 
@@ -59,7 +59,7 @@
                 <div id="Formulario2" class="was-validated">
                     <h3>Pregunta 1</h3>
                     <h4>Cual de los siguientes enunciados describe un objetivo de prueba válido?</h4>
-                    <select id="pregunta1" class="form-select">
+                    <select id="pregunta1" data-cy="select-question1" class="form-select" >
                         <option value=""></option>
                         <option value="A">Respuesta A: Demonstrar que no hay defectos no corregidos en el sistema sujeto
                             a
@@ -70,33 +70,33 @@
                             confianza en
                             el nivel de calidad.</option>
                     </select>
-                    <button type="button" class="btn btn-success" onclick="showAnswer(1)">Answer</button>
-                    <button type="button" class="btn btn-success" onclick="correctAnswer(1)">Correct</button>
+                    <button type="button" data-cy="button-show-answer-question1" class="btn btn-success" onclick="showAnswer(1)">Answer</button>
+                    <button type="button" data-cy="button-correct-answer-question1" class="btn btn-success" onclick="correctAnswer(1)">Correct</button>
                 </div>
-                <p id="respuesta1"></p>
-                <p id="corrigir1"></p>
+                <p id="respuesta1" data-cy="respuesta1"></p>
+                <p id="corrigir1" data-cy="corrigir1"></p>
 
                 <div id="Formulario3" class="was-validated">
                     <h3>Pregunta 2</h3>
                     <h4>A que actividad de prueba da soporte una herramiente de preparación de datos de prueba?</h4>
-                    <select id="pregunta2" class="form-select">
+                    <select id="pregunta2" data-cy="select-question2" class="form-select">
                         <option value=""></option>
                         <option value="A">Respuesta A: Monitorización y control de prueba.</option>
                         <option value="B">Respuesta B: Análisis y diseno de la prueba.</option>
                         <option value="C">Respuesta C: Implementación y ejecución de la prueba.</option>
                     </select>
-                    <button type="button" class="btn btn-success" onclick="showAnswer(2)">Answer</button>
-                    <button type="button" class="btn btn-success" onclick="correctAnswer(2)">Correct</button>
+                    <button type="button" data-cy="button-show-answer-question2" class="btn btn-success" onclick="showAnswer(2)">Answer</button>
+                    <button type="button" data-cy="button-correct-answer-question2"class="btn btn-success" onclick="correctAnswer(2)">Correct</button>
                 </div>
-                <p id="respuesta2"></p>
-                <p id="corrigir2"></p>
+                <p id="respuesta2" data-cy="respuesta2"></p>
+                <p id="corrigir2" data-cy="corrigir2"></p>
 
 
                 <div id="Formulario4" class="was-validated">
                     <h3>Pregunta 3</h3>
                     <h4>Cuál de las seguietes opciones es un ejemplo de actividades de prueba que contribuyen al éxito?
                     </h4>
-                    <select id="pregunta3" class="form-select">
+                    <select id="pregunta3" data-cy="select-question3" class="form-select">
                         <option value=""></option>
                         <option value="A">Respuesta A: La participación de probadores dutante varias actividades del
                             ciclo de
@@ -110,11 +110,11 @@
                             mientras
                             codifican, para que éstos escriban un código de mejor calidad.</option>
                     </select>
-                    <button type="button" class="btn btn-success" onclick="showAnswer(3)">Answer</button>
-                    <button type="button" class="btn btn-success" onclick="correctAnswer(3)">Correct</button>
+                    <button type="button" data-cy="button-show-answer-question3" class="btn btn-success" onclick="showAnswer(3)">Answer</button>
+                    <button type="button" data-cy="button-correct-answer-question3" class="btn btn-success" onclick="correctAnswer(3)">Correct</button>
                 </div>
-                <p id="respuesta3"></p>
-                <p id="corrigir3"></p>
+                <p id="respuesta3" data-cy="respuesta3"></p>
+                <p id="corrigir3" data-cy="corrigir3"></p>
 
                 <div id="Formulario5" class="was-validated">
                     <h3>Pregunta 4</h3>
@@ -122,7 +122,7 @@
                         la
                         iteración actual el equipo decidió implementar la funcionalidad de pago. </h4>
                     <h4>Cuál de las siguientes actividades forma parte del análisis de prueba?</h4>
-                    <select id="pregunta4" class="form-select">
+                    <select id="pregunta4" data-cy="select-question4" class="form-select">
                         <option value=""></option>
                         <option value="A">Respuesta A: Estimar que pobrar la integración con el servicio de pago llevará
                             8
@@ -136,17 +136,17 @@
                             informar
                             de un defecto.</option>
                     </select>
-                    <button type="button" class="btn btn-success" onclick="showAnswer(4)">Answer</button>
-                    <button type="button" class="btn btn-success" onclick="correctAnswer(4)">Correct</button>
+                    <button type="button" data-cy="button-show-answer-question4" class="btn btn-success" onclick="showAnswer(4)">Answer</button>
+                    <button type="button" data-cy="button-correct-answer-question4" class="btn btn-success" onclick="correctAnswer(4)">Correct</button>
                 </div>
-                <p id="respuesta4"></p>
-                <p id="corrigir4"></p>
+                <p id="respuesta4" data-cy="respuesta4"></p>
+                <p id="corrigir4" data-cy="corrigir4"></p>
 
                 <div id="Formulario6" class="was-validated">
                     <h3>Pregunta 5</h3>
                     <h4>Como queda reflejado el enfoque de equipo completo en las interacciones entre probadores y
                         representantes de negocio?</h4>
-                    <select id="pregunta5" class="form-select">
+                    <select id="pregunta5" data-cy="select-question5" class="form-select">
                         <option value=""></option>
                         <option value="A">Respuesta A: Los representantes de negocio deciden los enfoques de
                             automatización de
@@ -158,11 +158,11 @@
                             pruebas de
                             aceptacion adecuadas.</option>
                     </select>
-                    <button type="button" class="btn btn-success" onclick="showAnswer(5)">Answer</button>
-                    <button type="button" class="btn btn-success" onclick="correctAnswer(5)">Correct</button>
+                    <button type="button" data-cy="button-show-answer-question5" class="btn btn-success" onclick="showAnswer(5)">Answer</button>
+                    <button type="button" data-cy="button-correct-answer-question5" class="btn btn-success" onclick="correctAnswer(5)">Correct</button>
                 </div>
-                <p id="respuesta5"></p>
-                <p id="corrigir5"></p>
+                <p id="respuesta5" data-cy="respuesta5"></p>
+                <p id="corrigir5" data-cy="corrigir5"></p>
 
                 <div id="Formulario7" class="was-validated">
                     <h3>Pregunta 6</h3>
@@ -171,24 +171,24 @@
                         (CVDS) existe una actividad de prueba correspondiente". En qué modelos de CVDS se cumple esta
                         regla?
                     </h4>
-                    <select id="pregunta6" class="form-select">
+                    <select id="pregunta6" data-cy="select-question6" class="form-select">
                         <option value=""></option>
                         <option value="A">Respuesta A: En los modelos CVDS secuenciales, incrementales e iterativos.
                         </option>
                         <option value="B">Respuesta B: Sólo en modelos CVDS iterativos.</option>
                         <option value="C">Respuesta C: Sólo en modelos secuenciales.</option>
                     </select>
-                    <button type="button" class="btn btn-success" onclick="showAnswer(6)">Answer</button>
-                    <button type="button" class="btn btn-success" onclick="correctAnswer(6)">Correct</button>
+                    <button type="button" data-cy="button-show-answer-question6" class="btn btn-success" onclick="showAnswer(6)">Answer</button>
+                    <button type="button" data-cy="button-correct-answer-question6"class="btn btn-success" onclick="correctAnswer(6)">Correct</button>
                 </div>
-                <p id="respuesta6"></p>
-                <p id="corrigir6"></p>
+                <p id="respuesta6" data-cy="respuesta6"></p>
+                <p id="corrigir6" data-cy="corrigir6"></p>
 
                 <div id="Formulario8" class="was-validated">
                     <h3>Pregunta 7</h3>
                     <h4>Cuál de las siguientes opiciones NO es un ejemplo del enfoque de desplazamiento a la izquierda?
                     </h4>
-                    <select id="pregunta7" class="form-select">
+                    <select id="pregunta7" data-cy="select-question7" class="form-select">
                         <option value=""></option>
                         <option value="A">Respuesta A: Escribir una prueba de componentes antes de ecribir el código
                             correpondiente.</option>
@@ -199,17 +199,17 @@
                             gestión de
                             la configuración.</option>
                     </select>
-                    <button type="button" class="btn btn-success" onclick="showAnswer(7)">Answer</button>
-                    <button type="button" class="btn btn-success" onclick="correctAnswer(7)">Correct</button>
+                    <button type="button" data-cy="button-show-answer-question7" class="btn btn-success" onclick="showAnswer(7)">Answer</button>
+                    <button type="button" data-cy="button-correct-answer-question7"class="btn btn-success" onclick="correctAnswer(7)">Correct</button>
                 </div>
-                <p id="respuesta7"></p>
-                <p id="corrigir7"></p>
+                <p id="respuesta7" data-cy="respuesta7"></p>
+                <p id="corrigir7" data-cy="corrigir7"></p>
 
                 <div id="Formulario9" class="was-validated">
                     <h3>Pregunta 8</h3>
                     <h4>Cuál de las siguientes opiciones NO es una ventaja de la prueba estática?
                     </h4>
-                    <select id="pregunta8" class="form-select">
+                    <select id="pregunta8" data-cy="select-question8"class="form-select">
                         <option value=""></option>
                         <option value="A">Respuesta A: Tener una gestión de defectos menos costosa debido a la facilidad
                             de
@@ -220,35 +220,35 @@
                         </option>
                         <option value="C">Respuesta C: Detectar carencias e incoherencias en los requisitos.</option>
                     </select>
-                    <button type="button" class="btn btn-success" onclick="showAnswer(8)">Answer</button>
-                    <button type="button" class="btn btn-success" onclick="correctAnswer(8)">Correct</button>
+                    <button type="button" data-cy="button-show-answer-question8" class="btn btn-success" onclick="showAnswer(8)">Answer</button>
+                    <button type="button" data-cy="button-correct-answer-question8"class="btn btn-success" onclick="correctAnswer(8)">Correct</button>
                 </div>
-                <p id="respuesta8"></p>
-                <p id="corrigir8"></p>
+                <p id="respuesta8" data-cy="respuesta8"></p>
+                <p id="corrigir8" data-cy="corrigir8"></p>
 
                 <div id="Formulario10" class="was-validated">
                     <h3>Pregunta 9</h3>
                     <h4>Cuál de las siguientes opciones es una ventaja de la retroalimentación temprana y frecuente?
                     </h4>
-                    <select id="pregunta9" class="form-select">
+                    <select id="pregunta9" data-cy="select-question9" class="form-select">
                         <option value=""></option>
                         <option value="A">Respuesta A: Mejora el proceso de prueba para futurus proyectos.</option>
                         <option value="B">Respuesta B: Ayuda a evitar malentendidos sobre los requisitos.
                         </option>
                         <option value="C">Respuesta C: Es la única forma de medir la calidad de los cambios.</option>
                     </select>
-                    <button type="button" class="btn btn-success" onclick="showAnswer(9)">Answer</button>
-                    <button type="button" class="btn btn-success" onclick="correctAnswer(9)">Correct</button>
+                    <button type="button" data-cy="button-show-answer-question9" class="btn btn-success" onclick="showAnswer(9)">Answer</button>
+                    <button type="button" data-cy="button-correct-answer-question9"class="btn btn-success" onclick="correctAnswer(9)">Correct</button>
                 </div>
-                <p id="respuesta9"></p>
-                <p id="corrigir9"></p>
+                <p id="respuesta9" data-cy="respuesta9"></p>
+                <p id="corrigir9" data-cy="corrigir9"></p>
 
                 <div id="Formulario11" class="was-validated">
                     <h3>Pregunta 10</h3>
                     <h4>Cuál de las siguientes opciones es una característica de las técnicas de prueba basadas en a
                         experiencia?
                     </h4>
-                    <select id="pregunta10" class="form-select">
+                    <select id="pregunta10" data-cy="select-question10" class="form-select">
                         <option value=""></option>
                         <option value="A">Respuesta A: Los casos de prueba se crean a partir de información de diseno
                             detallada.
@@ -261,22 +261,22 @@
                             probador
                             sobre el software y el dominio del negocio.</option>
                     </select>
-                    <button type="button" class="btn btn-success" onclick="showAnswer(10)">Answer</button>
-                    <button type="button" class="btn btn-success" onclick="correctAnswer(10)">Correct</button>
+                    <button type="button" data-cy="button-show-answer-question10"class="btn btn-success" onclick="showAnswer(10)">Answer</button>
+                    <button type="button" data-cy="button-correct-answer-question10"class="btn btn-success" onclick="correctAnswer(10)">Correct</button>
 
 
                 </div>
-                <p id="respuesta10"></p>
-                <p id="corrigir10"></p>
+                <p id="respuesta10" data-cy="respuesta10"></p>
+                <p id="corrigir10" data-cy="corrigir10"></p>
 
 
                 <div id="ranking">
                     <h2>Final Score</h2>
-                    <button type="button" class="btn btn-success" onclick="verPontuacion()">Finish the exam</button>
-                    <p id="pontuacionFinal"></p>
+                    <button type="button"  data-cy="button-final-score"class="btn btn-success" onclick="verPuntuacion()">Finish the exam</button>
+                    <p id="puntuacionFinal" data-cy="puntuacion-final"></p>
                     <p>Student Ranking</p>
-                    <button type="button" class="btn btn-success" onclick="imprimirAlumno()">Ranking</button>
-                    <p id="ranking1"></p>
+                    <button type="button" data-cy="button-ranking" class="btn btn-success" onclick="imprimirAlumno()">Ranking</button>
+                    <p id="ranking1" data-cy="ranking"></p>
 
                 </div>
 

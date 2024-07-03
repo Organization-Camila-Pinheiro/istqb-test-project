@@ -10,9 +10,11 @@ function imprimir(mensaje, id) {
 
 function bienvenida() {
     let nombreEstudiante = document.getElementById("nombre1").value;
+    if (nombreEstudiante !== "") {
 
-    let mensaje = "Hola " + nombreEstudiante + ", sea bienvenida al examen de ISTQB! Que hagas un buen examen!";
-    imprimir(mensaje, "welcome1");
+        let mensaje = "Hola " + nombreEstudiante + ", sea bienvenida al examen de ISTQB! Que hagas un buen examen!";
+        imprimir(mensaje, "welcome1");
+    }
 }
 
 function showAnswer(numeroPregunta) {
@@ -75,15 +77,15 @@ function verPuntuacion() {
 }
 
 function agregarEstudiante() {
-    let student = {} 
+    let student = {}
     let nombreEstudiante = document.getElementById("nombre1").value;
 
     if (nombreEstudiante !== "") {
         student.nombre = document.getElementById("nombre1").value;
         student.notaFinal = sumaTotal;
         listaRanking.push(student);
-        }
-        
+    }
+
     listaRanking.sort((a, b) => b.notaFinal - a.notaFinal)
 }
 

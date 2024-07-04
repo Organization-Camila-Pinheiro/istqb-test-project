@@ -95,7 +95,7 @@ function imprimirAlumno() {
     for (i = 0; i < listaRanking.length; i++) {
         let studentRanking = listaRanking[i]
         mensaje += "\n Nombre: " + studentRanking.nombre;
-        mensaje += "\n Pontuación final: " + studentRanking.notaFinal;
+        mensaje += "\n Puntuación final: " + studentRanking.notaFinal;
     }
     imprimir(mensaje, "ranking1")
 

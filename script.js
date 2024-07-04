@@ -71,7 +71,7 @@ function verPuntuacion() {
         mensaje = "Su pontuación final es " + sumaTotal
     }
 
-    imprimir(mensaje, "pontuacionFinal");
+    imprimir(mensaje, "puntuacionFinal");
     agregarEstudiante();
     borrarRespuesta();
 }

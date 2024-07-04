@@ -68,7 +68,7 @@ function verPuntuacion() {
     for (let i = 1; i <= 10; i++) {
         let score = correctAnswer(i)
         sumaTotal += score
-        mensaje = "Su pontuación final es " + sumaTotal
+        mensaje = "Su puntuación final es " + sumaTotal
     }
 
     imprimir(mensaje, "puntuacionFinal");

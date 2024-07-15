@@ -1,7 +1,7 @@
 
 # ISTQB ONLINE TEST
 This is an ISTQB Online Exam Web Project.
-[ISTQB ONLINE TEST PROJECT](https://organization-camila-pinheiro.github.io/istqb-test-project/)
+[ISTQB ONLINE TEST PROJECT](https://github.com/cam-pinheiro/istqb-test-project)
 
 ## BUILD WITH
 * ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
